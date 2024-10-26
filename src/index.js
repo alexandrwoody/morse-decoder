@@ -51,7 +51,6 @@ function decode(expr) {
         let letter = '';
         word = word.split('');
         word.forEach((element) => {
-
             letter += element;
             if (letter.length === 10) {
                 letter = remZero(letter);
@@ -65,10 +64,6 @@ function decode(expr) {
         });
         return letterArr.join('');
     }
-
-
-
-
     function splArr(s) {
         s = s.replace(/10/g, '.');
         s = s.replace(/11/g, '-');
